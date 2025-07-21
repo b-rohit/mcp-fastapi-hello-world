@@ -1,0 +1,9 @@
+[project]
+name = "fastagent"
+version = "0.1.0"
+description = "MCP client written using fast-agent"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fast-agent-mcp>=0.2.45",
+]

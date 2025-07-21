@@ -1,0 +1,5 @@
+mcp:
+  servers:
+    mcp_math_server_sse:
+      transport: sse
+      url: http://localhost:9090/mcp
