@@ -1,0 +1,9 @@
+[project]
+name = "mcpagent"
+version = "0.1.0"
+description = "MCP client written using mcp-agent"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp-agent>=0.1.6",
+]
