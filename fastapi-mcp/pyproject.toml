@@ -1,0 +1,10 @@
+[project]
+name = "fastapimcp"
+version = "0.1.0"
+description = "MCP Server written using fastapi-mcp"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.116.1",
+    "fastapi-mcp>=0.3.7"
+]
