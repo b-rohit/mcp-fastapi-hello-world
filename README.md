@@ -18,4 +18,5 @@ This repository contains code to create MCP server with FastAPI with popular lib
 ## References
 
 - [Model Context Protocol](https://modelcontextprotocol.io/)
+- [https://www.jlowin.dev/blog/stop-converting-rest-apis-to-mcp](https://www.jlowin.dev/blog/stop-converting-rest-apis-to-mcp)
 
