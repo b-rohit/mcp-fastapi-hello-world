@@ -22,17 +22,16 @@ mcp_app = mcp.http_app()
 app = FastAPI(
     title="Math MCP server",
     description="A service that provides math tools",
-    version="1.0.0",
-    lifespan=mcp_app.router.lifespan_context,
+    version="1.0.0"
 )
-
-# Mount the MCP ASGI app
-app.mount("/api/v1", mcp_app, "mcp")
 
 # Root path works fine
 @app.get("/")
 async def root():
     return {"message": "Math MCP running"}
+
+# Convert to MCP server
+mcp = FastMCP.from_fastapi(app=app)
 
 if __name__ == "__main__":
     uvicorn.run("server:app", host="0.0.0.0", port=9090, reload=True)

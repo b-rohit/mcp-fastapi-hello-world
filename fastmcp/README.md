@@ -2,6 +2,11 @@
 
 It is a hello world server written using [FastAPI](https://fastapi.tiangolo.com/) and [fastmcp](https://github.com/jlowin/fastmcp).
 
+There are two ways to integreate FasMCP with FastAPI
+
+1. [Covert fastapi to MCP Server](server-1.py)
+2. [Mount MCP server to fastapi](server-2.py)
+
 ## Prerequisite
 
 - install uv
@@ -35,7 +40,7 @@ uv sync
   - with python
 
     ```
-    python server.py
+    python server-1.py
 
     ```
 
